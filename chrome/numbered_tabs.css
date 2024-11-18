@@ -4,4 +4,14 @@ See the above repository for updates as well as full license text. */
 /* Show a number before tab text*/
 
 .tabbrowser-tab:first-child{ counter-reset: nth-tab 0 } /* Change to -1 for 0-indexing */
-.tab-text::before{ content: counter(nth-tab) " "; counter-increment: nth-tab }
+.tab-text::before{
+    content: counter(nth-tab);
+    font-weight: 700;
+    counter-increment: nth-tab;
+    border: 2px solid yellow;
+    color: yellow;
+    width: auto;
+    background-color: black;
+    height: auto;
+    padding: 0 2px;
+}

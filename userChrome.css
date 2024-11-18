@@ -1,0 +1,30 @@
+/* Import your desired components first */
+@import url(chrome/numbered_tabs.css);
+
+/* Apply your custom modifications after imports */
+
+#tabbrowser-tabs .tab-background[selected] {
+  border-bottom: 5px solid red;
+}
+
+#tabbrowser-tabs .tab-background {
+  background: var(--identity-icon-color, rgb(130, 130, 130)) !important;
+  transition: all .15s ease-in-out !important;
+}
+
+#tabbrowser-tabs .tab-context-line {
+  display: none;
+}
+
+.tabbrowser-tab .tab-label {
+  color: black !important;
+}
+
+.TabsToolbar .tabbrowser-tabs .tab-content[selected] {
+  font-weight: 700 !important;
+  color: black;
+}
+
+#urlbar-background {
+  background: black !important;
+}
